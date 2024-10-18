@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clone_PRN_HoangNT2"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Connect To System" Height="450" Width="800" Background="red">
+    <Grid Margin="1,0,0,-3" RenderTransformOrigin="0.5,0.5">
+
+        <Rectangle HorizontalAlignment="Center" Height="269" Margin="0,62,0,0" 
+                   Stroke="Black" VerticalAlignment="Top" Width="631"
+                   Fill="Yellow" RadiusX="10" RadiusY="10"/>
+        <Label Content="Log in" HorizontalAlignment="Left" Height="86" Margin="316,62,0,0" VerticalAlignment="Top" 
+               Width="252" Foreground="Red" FontSize="40" FontWeight="ExtraBlack" RenderTransformOrigin="0.681,0.458"
+               />
+        <Label Content="Email" Foreground="Red" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Height="41" Margin="136,153,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.494,0.023"/>
+        <TextBox Background="Red" HorizontalAlignment="Left" Height="30" Margin="241,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="402"/>
+        <TextBox Background="Red" HorizontalAlignment="Left" Height="32" Margin="241,213,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="402"/>
+        <Label Content="Password" Foreground="Red" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Height="42" Margin="136,213,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.458,0.051"/>
+        <Button Content="Login" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="149,270,0,0" VerticalAlignment="Top" Width="215"/>
+        <Button Content="Quit" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="415,270,0,0" VerticalAlignment="Top" Width="228" RenderTransformOrigin="0.507,0.903"/>
+        <Label Content="Hoang Chi Trung VipVloz" FontSize="20" FontWeight="ExtraBold" Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="255,358,0,0" VerticalAlignment="Top" Width="274"/>
+
+
     </Grid>
 </Window>
