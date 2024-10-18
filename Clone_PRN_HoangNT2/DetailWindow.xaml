@@ -1,0 +1,64 @@
+﻿<Window x:Class="Clone_PRN_HoangNT2.DetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clone_PRN_HoangNT2"
+        mc:Ignorable="d"
+        Title="Air Condition Detail" Height="470" Width="801" Background="Red" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Create | Update Air Conditioner" HorizontalAlignment="Left" 
+               Height="59" Margin="10,0,0,0" VerticalAlignment="Top" Width="611"
+               FontWeight="ExtraBold" FontSize="33" Foreground="Yellow"/>
+        <Rectangle HorizontalAlignment="Left" Height="355" Margin="10,69,0,0" 
+                   Stroke="Black" VerticalAlignment="Top" Width="611"
+                   Fill="Yellow" RadiusX="10" RadiusY="10"  />
+        <Label Content="Air Con ID" HorizontalAlignment="Left" Height="37" Margin="26,77,0,0" 
+               VerticalAlignment="Top" Width="96" Foreground="Red" FontSize="15"
+               FontWeight="DemiBold"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="139,80,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="229" Background="red"/>
+        <Label Content="Air Con Name" HorizontalAlignment="Left" Height="37" Margin="21,121,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.459,0.942"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="139,121,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="434" Background="red"/>
+        <TextBox HorizontalAlignment="Left" Height="38" Margin="139,164,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="434" Background="red"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="140,210,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="434" Background="red"/>
+        <Label Content="Warranty" HorizontalAlignment="Left" Height="37" Margin="21,173,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.519,2.396"/>
+        <Label Content="Sound Level" HorizontalAlignment="Left" Height="37" Margin="21,210,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.496,-0.069"/>
+        <Label Content="Feature Function" HorizontalAlignment="Left" Height="37" Margin="15,252,0,0" 
+            VerticalAlignment="Top" Width="130" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.496,-0.069"/>
+        <TextBox HorizontalAlignment="Left" Height="70" Margin="140,251,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="434" Background="red"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Height="37" Margin="27,326,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.496,-0.069"/>
+        <Label Content="Price ($)" HorizontalAlignment="Center" Height="37" Margin="0,326,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.496,-0.069"/>
+        <Label Content="Supplier ID" HorizontalAlignment="Left" Height="37" Margin="26,380,0,0" 
+            VerticalAlignment="Top" Width="108" Foreground="Red" FontSize="15"
+            FontWeight="DemiBold" RenderTransformOrigin="0.496,-0.069"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="140,326,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="144" Background="red"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="440,327,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="133" Background="red"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="139,374,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="217" Background="white"/>
+        <Button Content="Save Air Con" HorizontalAlignment="Left" Height="39" Margin="656,71,0,0" 
+                VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.52,0.032"
+                Background="Yellow" Foreground="Red" FontWeight="ExtraBold"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="43" Margin="656,140,0,0"
+                VerticalAlignment="Top" Width="117" Background="Yellow" Foreground="red" FontWeight="ExtraBold"/>
+
+
+    </Grid>
+</Window>
