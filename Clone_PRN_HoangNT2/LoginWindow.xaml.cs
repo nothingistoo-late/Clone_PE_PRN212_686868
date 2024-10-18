@@ -23,5 +23,6 @@ namespace Clone_PRN_HoangNT2
         {
             InitializeComponent();
         }
+        //helloooo
     }
 }
