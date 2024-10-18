@@ -8,8 +8,8 @@
         Title="Connect To System" Height="450" Width="800" Background="red">
     <Grid Margin="1,0,0,-3" RenderTransformOrigin="0.5,0.5">
 
-        <Rectangle HorizontalAlignment="Center" Height="269" Margin="0,62,0,0" 
-                   Stroke="Black" VerticalAlignment="Top" Width="631"
+        <Rectangle HorizontalAlignment="Center" Height="291" Margin="0,62,0,0" 
+                   Stroke="Black" VerticalAlignment="Top" Width="624"
                    Fill="Yellow" RadiusX="10" RadiusY="10"/>
         <Label Content="Log in" HorizontalAlignment="Left" Height="86" Margin="316,62,0,0" VerticalAlignment="Top" 
                Width="252" Foreground="Red" FontSize="40" FontWeight="ExtraBlack" RenderTransformOrigin="0.681,0.458"
