@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:Clone_PRN_HoangNT2"
         mc:Ignorable="d"
         Title="Thế giới điện tử xứ F - ver.24-SU" Height="450" Width="800" Background="red" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Margin="0,0,-28,-1" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.245"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="61*"/>
             <ColumnDefinition Width="39*"/>
@@ -25,7 +33,26 @@
         <Button  Grid.Column="1" Content="Delete Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,290,0,0" VerticalAlignment="Top" Width="134"/>
         <Label Content="2024 - Chí Trung đẹp trai vl" FontWeight="ExtraBlack" Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="10,384,0,0" VerticalAlignment="Top" Width="184"/>
         <Button  Grid.Column="1" Content="Quit" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,362,0,0" VerticalAlignment="Top" Width="134"/>
-        <Rectangle Grid.ColumnSpan="2" Fill="Yellow" HorizontalAlignment="Left" Height="152" Margin="60,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="494"/>
-
+        <DataGrid x:Name="AirCondDataGrid" HorizontalAlignment="Left" Height="158" Margin="20,193,0,0" VerticalAlignment="Top" Width="597" AutoGenerateColumns="False" TabIndex="7" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" >
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.067"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}" />
+                <DataGridTextColumn Header="Air Con Name" Width="200" Binding="{Binding AirConditionerName}" />
+                <DataGridTextColumn Header="Warranty" Width="70" Binding="{Binding Warranty}" />
+                <DataGridTextColumn Header="Sound Level" Width="100" Binding="{Binding SoundPressureLevel}" />
+                <DataGridTextColumn Header="Feature Function" Width="200" Binding="{Binding FeatureFunction}" />
+                <DataGridTextColumn Header="Quantity" Width="70" Binding="{Binding Quantity}" />
+                <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding DollarPrice}" />
+                <DataGridTextColumn Header="Supplier ID" Width="70" Binding="{Binding SupplierId}" />
+                <DataGridTextColumn Header="Supplier Name" Width="140" Binding="{Binding SupplierCompany.SupplierName}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
