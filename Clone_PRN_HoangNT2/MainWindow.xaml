@@ -5,12 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clone_PRN_HoangNT2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Thế giới điện tử xứ F - ver.24-SU" Height="450" Width="800" Background="red" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="61*"/>
             <ColumnDefinition Width="39*"/>
         </Grid.ColumnDefinitions>
+        <Label Content="Thế giới điện tử xứ F" FontSize="40" FontWeight="ExtraBold" Foreground="Yellow" HorizontalAlignment="Left" Height="61" Margin="10,10,0,0" VerticalAlignment="Top" Width="441"/>
+        <Label Content="ver.24-SU" Foreground="Yellow" FontSize="20" FontWeight="ExtraBlack" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="66" Margin="451,32,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Hello Administrator" FontSize="15" Foreground="Yellow" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="134,10,0,0" VerticalAlignment="Top" Width="168" Grid.Column="1"/>
+        <Rectangle Fill="Yellow" RadiusX="10" RadiusY="10" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="70" Margin="60,98,0,0" Stroke="Black" VerticalAlignment="Top" Width="706"/>
+        <Button Content="Search Air Conditioner" FontWeight="ExtraBold" Background="Red" Foreground="Yellow" HorizontalAlignment="Left" Height="28" Margin="74,119,0,0" VerticalAlignment="Top" Width="156"/>
+        <Label Content="Feature Function" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="257,119,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511"/>
+        <TextBox Background="Red" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="28" Margin="371,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134"/>
+        <Label Content="Quantity" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="66,120,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511" Grid.Column="1"/>
+        <TextBox Background="Red" HorizontalAlignment="Left" Height="29" Margin="134,118,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134" Grid.Column="1"/>
+        <Button  Grid.Column="1" Content="Create Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,0,0,0" VerticalAlignment="Center" Width="134"/>
+        <Button  Grid.Column="1" Content="Update Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,243,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button  Grid.Column="1" Content="Delete Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,290,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label Content="2024 - Chí Trung đẹp trai vl" FontWeight="ExtraBlack" Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="10,384,0,0" VerticalAlignment="Top" Width="184"/>
+        <Button  Grid.Column="1" Content="Quit" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,362,0,0" VerticalAlignment="Top" Width="134"/>
 
     </Grid>
 </Window>
