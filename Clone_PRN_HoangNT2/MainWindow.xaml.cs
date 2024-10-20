@@ -20,5 +20,32 @@ namespace Clone_PRN_HoangNT2
         {
             InitializeComponent();
         }
+
+        private void AirCondDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DetailWindow detailWindow = new DetailWindow();
+            detailWindow.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DetailWindow detailWindow = new DetailWindow();
+            detailWindow.ShowDialog();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult answer = MessageBox.Show("Do You Really Want To Exit???", "Logout", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (answer == MessageBoxResult.Yes)
+            {
+                DetailWindow detailWindow = new DetailWindow();
+                detailWindow.ShowDialog();
+            }
+        }
     }
 }

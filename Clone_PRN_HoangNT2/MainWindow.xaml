@@ -26,14 +26,14 @@
         <Button Content="Search Air Conditioner" FontWeight="ExtraBold" Background="Red" Foreground="Yellow" HorizontalAlignment="Left" Height="28" Margin="74,119,0,0" VerticalAlignment="Top" Width="156"/>
         <Label Content="Feature Function" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="257,119,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511"/>
         <TextBox Background="Red" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="28" Margin="371,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134"/>
-        <Label Content="Quantity" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="66,120,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511" Grid.Column="1"/>
-        <TextBox Background="Red" HorizontalAlignment="Left" Height="29" Margin="134,118,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134" Grid.Column="1"/>
-        <Button  Grid.Column="1" Content="Create Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,0,0,0" VerticalAlignment="Center" Width="134"/>
-        <Button  Grid.Column="1" Content="Update Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,243,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label Content="Quantity" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="52,120,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511" Grid.Column="1"/>
+        <TextBox Background="Red" HorizontalAlignment="Left" Height="29" Margin="115,118,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="131" Grid.Column="1" RenderTransformOrigin="0.418,0.667"/>
+        <Button  Grid.Column="1" Content="Create Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,0,0,0" VerticalAlignment="Center" Width="134" Click="Button_Click"/>
+        <Button  Grid.Column="1" Content="Update Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,243,0,0" VerticalAlignment="Top" Width="134" Click="Button_Click_1"/>
         <Button  Grid.Column="1" Content="Delete Air Con" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,290,0,0" VerticalAlignment="Top" Width="134"/>
         <Label Content="2024 - Chí Trung đẹp trai vl" FontWeight="ExtraBlack" Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="10,384,0,0" VerticalAlignment="Top" Width="184"/>
-        <Button  Grid.Column="1" Content="Quit" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,362,0,0" VerticalAlignment="Top" Width="134"/>
-        <DataGrid x:Name="AirCondDataGrid" HorizontalAlignment="Left" Height="158" Margin="20,193,0,0" VerticalAlignment="Top" Width="597" AutoGenerateColumns="False" TabIndex="7" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" >
+        <Button  Grid.Column="1" Content="Quit" FontSize="15" FontWeight="ExtraBlack" Foreground="Red" Background="Yellow" HorizontalAlignment="Left" Height="42" Margin="138,362,0,0" VerticalAlignment="Top" Width="134" Click="Button_Click_2"/>
+        <DataGrid x:Name="AirCondDataGrid" HorizontalAlignment="Left" Height="186" Margin="20,193,0,0" VerticalAlignment="Top" Width="612" AutoGenerateColumns="False" TabIndex="7" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" SelectionChanged="AirCondDataGrid_SelectionChanged" >
             <DataGrid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -44,10 +44,10 @@
             </DataGrid.RenderTransform>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}" />
-                <DataGridTextColumn Header="Air Con Name" Width="200" Binding="{Binding AirConditionerName}" />
+                <DataGridTextColumn Header="Air Con Name" Width="50" Binding="{Binding AirConditionerName}" />
                 <DataGridTextColumn Header="Warranty" Width="70" Binding="{Binding Warranty}" />
                 <DataGridTextColumn Header="Sound Level" Width="100" Binding="{Binding SoundPressureLevel}" />
-                <DataGridTextColumn Header="Feature Function" Width="200" Binding="{Binding FeatureFunction}" />
+                <DataGridTextColumn Header="Feature Function" Width="50" Binding="{Binding FeatureFunction}" />
                 <DataGridTextColumn Header="Quantity" Width="70" Binding="{Binding Quantity}" />
                 <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding DollarPrice}" />
                 <DataGridTextColumn Header="Supplier ID" Width="70" Binding="{Binding SupplierId}" />

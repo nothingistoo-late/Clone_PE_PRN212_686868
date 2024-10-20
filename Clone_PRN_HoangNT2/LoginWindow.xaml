@@ -18,8 +18,8 @@
         <TextBox Background="Red" HorizontalAlignment="Left" Height="30" Margin="241,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="402"/>
         <TextBox Background="Red" HorizontalAlignment="Left" Height="32" Margin="241,213,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="402"/>
         <Label Content="Password" Foreground="Red" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Height="42" Margin="136,213,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.458,0.051"/>
-        <Button Content="Login" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="149,270,0,0" VerticalAlignment="Top" Width="215"/>
-        <Button Content="Quit" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="415,270,0,0" VerticalAlignment="Top" Width="228" RenderTransformOrigin="0.507,0.903"/>
+        <Button Content="Login" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="149,270,0,0" VerticalAlignment="Top" Width="215" Click="Button_Click"/>
+        <Button Content="Quit" FontWeight="ExtraBold" FontSize="20" Background="red" Foreground="Yellow" HorizontalAlignment="Left" Height="48" Margin="415,270,0,0" VerticalAlignment="Top" Width="228" RenderTransformOrigin="0.507,0.903" Click="Button_Click_1"/>
         <Label Content="Hoang Chi Trung VipVloz" FontSize="20" FontWeight="ExtraBold" Foreground="Yellow" HorizontalAlignment="Left" Height="40" Margin="255,358,0,0" VerticalAlignment="Top" Width="274"/>
 
 
