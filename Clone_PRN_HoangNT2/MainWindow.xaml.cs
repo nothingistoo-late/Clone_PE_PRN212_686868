@@ -26,19 +26,8 @@ namespace Clone_PRN_HoangNT2
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DetailWindow detailWindow = new DetailWindow();
-            detailWindow.ShowDialog();
-        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            DetailWindow detailWindow = new DetailWindow();
-            detailWindow.ShowDialog();
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void QuitButton(object sender, RoutedEventArgs e)
         {
             MessageBoxResult answer = MessageBox.Show("Do You Really Want To Exit???", "Logout", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (answer == MessageBoxResult.Yes)
@@ -47,9 +36,24 @@ namespace Clone_PRN_HoangNT2
             }
         }
 
+
+
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            DetailWindow detailWindow = new DetailWindow();
+            detailWindow.ShowDialog();
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            DetailWindow detailWindow = new DetailWindow();
+            detailWindow.ShowDialog();
         }
     }
 }
