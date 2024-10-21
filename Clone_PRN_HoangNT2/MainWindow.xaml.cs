@@ -43,9 +43,13 @@ namespace Clone_PRN_HoangNT2
             MessageBoxResult answer = MessageBox.Show("Do You Really Want To Exit???", "Logout", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (answer == MessageBoxResult.Yes)
             {
-                DetailWindow detailWindow = new DetailWindow();
-                detailWindow.ShowDialog();
+                Application.Current.Shutdown();
             }
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
