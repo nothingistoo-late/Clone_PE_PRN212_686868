@@ -23,7 +23,7 @@
         <Label Content="ver.24-SU" Foreground="Yellow" FontSize="20" FontWeight="ExtraBlack" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="66" Margin="451,32,0,0" VerticalAlignment="Top" Width="126"/>
         <Label Content="Hello Administrator" FontSize="15" Foreground="Yellow" FontWeight="ExtraBold" HorizontalAlignment="Left" Height="30" Margin="134,10,0,0" VerticalAlignment="Top" Width="168" Grid.Column="1"/>
         <Rectangle Fill="Yellow" RadiusX="10" RadiusY="10" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="70" Margin="60,98,0,0" Stroke="Black" VerticalAlignment="Top" Width="706"/>
-        <Button Content="Search Air Conditioner" FontWeight="ExtraBold" Background="Red" Foreground="Yellow" HorizontalAlignment="Left" Height="28" Margin="74,119,0,0" VerticalAlignment="Top" Width="156"/>
+        <Button Content="Search Air Conditioner" FontWeight="ExtraBold" Background="Red" Foreground="Yellow" HorizontalAlignment="Left" Height="28" Margin="74,119,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click"/>
         <Label Content="Feature Function" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="257,119,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511"/>
         <TextBox Background="Red" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="28" Margin="371,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134"/>
         <Label Content="Quantity" FontWeight="ExtraBlack" Foreground="Red"  HorizontalAlignment="Left" Height="28" Margin="52,120,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.467,-2.511" Grid.Column="1"/>
@@ -43,15 +43,15 @@
                 </TransformGroup>
             </DataGrid.RenderTransform>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}" />
-                <DataGridTextColumn Header="Air Con Name" Width="50" Binding="{Binding AirConditionerName}" />
+                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConId}" />
+                <DataGridTextColumn Header="Air Con Name" Width="50" Binding="{Binding AirConName}" />
                 <DataGridTextColumn Header="Warranty" Width="70" Binding="{Binding Warranty}" />
-                <DataGridTextColumn Header="Sound Level" Width="100" Binding="{Binding SoundPressureLevel}" />
-                <DataGridTextColumn Header="Feature Function" Width="50" Binding="{Binding FeatureFunction}" />
+                <DataGridTextColumn Header="Sound Level" Width="100" Binding="{Binding SoundLevel}" />
+                <DataGridTextColumn Header="Feature Function" Width="50" Binding="{Binding Feature}" />
                 <DataGridTextColumn Header="Quantity" Width="70" Binding="{Binding Quantity}" />
-                <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding DollarPrice}" />
-                <DataGridTextColumn Header="Supplier ID" Width="70" Binding="{Binding SupplierId}" />
-                <DataGridTextColumn Header="Supplier Name" Width="140" Binding="{Binding SupplierCompany.SupplierName}" />
+                <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding Price}" />
+                <DataGridTextColumn Header="Supplier ID" Width="70" Binding="{Binding SupplierID}" />
+                <DataGridTextColumn Header="Supplier Name" Width="140" Binding="{Binding SupplierName}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
